@@ -5,8 +5,4 @@
  * @author Mike
  */
 
-;((w) => {
-  'use strict';
-
-  
-})(window)
+import './features/products-grid';
