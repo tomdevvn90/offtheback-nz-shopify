@@ -1,0 +1,183 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "d89e73a9-fa25-4cfb-8d1e-d72adee8cb3e": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "enable_local_pickup": true
+          }
+        },
+        "7e241f6a-e301-4492-9b31-06b1d1bf40fa": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_display": "hidden",
+            "inventory_transfer_notice": true
+          }
+        },
+        "d582bbd4-e6b1-4d47-9bcf-5f270bf270f7": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "{{ product.metafields.custom.supplier_message | metafield_text }}"
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "d86597a4-8cb7-41e7-9d00-dad748167361": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Why Shop at OffTheBack?<\/strong><\/p>"
+          }
+        },
+        "594110d6-4a8a-48e7-a638-b070f857fce2": {
+          "type": "key_details",
+          "settings": {
+            "icon": "icon-delivery-package",
+            "image": "shopify:\/\/shop_images\/Frame_d6e89122-5191-4b83-a114-354eaaea6382.png",
+            "title": "FAST DELIVERIES",
+            "text": "<p>Delivered to your door<\/p>",
+            "text_color": "#1d1d1d",
+            "icon_color": "#1d1d1d",
+            "background_color": "#fafafa"
+          }
+        },
+        "14ebde11-0660-4f0d-be54-35789dae9618": {
+          "type": "key_details",
+          "settings": {
+            "icon": "icon-delivery-package",
+            "image": "shopify:\/\/shop_images\/Frame_3be83c51-f0ee-4e0a-b0d0-31b48289364b.png",
+            "title": "OVER 1 MILLION",
+            "text": "<p>Items delivered<\/p>",
+            "text_color": "#1d1d1d",
+            "icon_color": "#1d1d1d",
+            "background_color": "#fafafa"
+          }
+        },
+        "bb58e241-8ef0-4f40-adda-45547ca6b885": {
+          "type": "key_details",
+          "settings": {
+            "icon": "icon-credit-card",
+            "image": "shopify:\/\/shop_images\/Group_cfeb0285-d4a5-43bc-8d0a-c44475684139.png",
+            "title": "SECURE TRANSACTIONS",
+            "text": "<p>Protected by SSL Certificates<\/p>",
+            "text_color": "#1d1d1d",
+            "icon_color": "#1d1d1d",
+            "background_color": "#fafafa"
+          }
+        },
+        "dae0ff01-4514-40ed-b7fc-cff6aa7a45a0": {
+          "type": "tabs",
+          "disabled": true,
+          "settings": {
+            "show_product_description": false,
+            "show_tabs_below_product_gallery": false,
+            "tab_heading_1": "Description",
+            "tab_text_1": "<p>Use this text to share information about your product.<\/p>",
+            "tab_heading_2": "Additional information",
+            "tab_text_2": "<p>Use this text to share information about your product.<\/p>",
+            "tab_heading_3": "",
+            "tab_text_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "rating",
+        "d89e73a9-fa25-4cfb-8d1e-d72adee8cb3e",
+        "price",
+        "description",
+        "form",
+        "7e241f6a-e301-4492-9b31-06b1d1bf40fa",
+        "d582bbd4-e6b1-4d47-9bcf-5f270bf270f7",
+        "share",
+        "d86597a4-8cb7-41e7-9d00-dad748167361",
+        "594110d6-4a8a-48e7-a638-b070f857fce2",
+        "14ebde11-0660-4f0d-be54-35789dae9618",
+        "bb58e241-8ef0-4f40-adda-45547ca6b885",
+        "dae0ff01-4514-40ed-b7fc-cff6aa7a45a0"
+      ],
+      "settings": {
+        "gallery_aspect_ratio": "natural",
+        "gallery_image_crop": false,
+        "gallery_thumbnail_position": "below",
+        "gallery_video_autoplay": true,
+        "gallery_video_looping": true,
+        "gallery_hover_zoom": "disabled",
+        "gallery_click_to_zoom": "always"
+      }
+    },
+    "recommendations": {
+      "type": "static-product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "Related Products"
+      }
+    },
+    "recently-viewed": {
+      "type": "static-recently-viewed",
+      "settings": {
+        "enable_recently_viewed_products": true
+      }
+    },
+    "1674402500eea895e0": {
+      "type": "apps",
+      "blocks": {
+        "ac3c8c5c-6d72-4339-9025-f3ce7da597cc": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "b53375ab-6b07-49db-9831-3ea551b18b78": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ac3c8c5c-6d72-4339-9025-f3ce7da597cc",
+        "b53375ab-6b07-49db-9831-3ea551b18b78"
+      ],
+      "settings": {
+        "include_padding": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recommendations",
+    "recently-viewed",
+    "1674402500eea895e0"
+  ]
+}
