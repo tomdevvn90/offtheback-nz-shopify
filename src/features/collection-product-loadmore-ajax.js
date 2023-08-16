@@ -10,14 +10,13 @@
 
   const CollectionScrollingLoadmore = ($elem) => {
     let isLoading = false;
-    let nextUrl = $elem.find('li.pagination--next a.pagination--item').attr('href');
+    let $paginatioNext = $elem.find('li.pagination--next a.pagination--item');
+    let nextUrl = $paginatioNext.length ? $paginatioNext.attr('href') : '';
     let $loadMoreMessage = $('<span class="loadmore-text" style="display: none;">Load more...</span>');
 
     $elem.after($loadMoreMessage);
 
     const getProducts = async () => {
-      if(nextUrl == '') return;
-
       const __html = await $.get(nextUrl);
       const $nextItem = $(__html).find('.pagination--container .pagination--next .pagination--item');
       const $products = $($(__html).find('ul.productgrid--items').html());
@@ -62,7 +61,8 @@
 
     $(w).on('scroll', async (e) => {
 
-      if(isLoadmore() && isLoading == false) {
+      if(isLoadmore() && isLoading == false && nextUrl) {
+
         isLoading = true;
         $loadMoreMessage.css('display', 'block');
         let scrollTopAfterLoad = $(w).scrollTop();
@@ -92,7 +92,7 @@
       if(loadmoreAjax != true) return;
 
       $(this).find('.pagination--container').css('display', 'none');
-      CollectionScrollingLoadmore($(this));
+      CollectionScrollingLoadmore($(this)); 
     })
   })
 })(window, jQuery)

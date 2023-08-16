@@ -29,7 +29,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
   var CollectionScrollingLoadmore = function CollectionScrollingLoadmore($elem) {
     var isLoading = false;
-    var nextUrl = $elem.find('li.pagination--next a.pagination--item').attr('href');
+    var $paginatioNext = $elem.find('li.pagination--next a.pagination--item');
+    var nextUrl = $paginatioNext.length ? $paginatioNext.attr('href') : '';
     var $loadMoreMessage = $('<span class="loadmore-text" style="display: none;">Load more...</span>');
     $elem.after($loadMoreMessage);
     var getProducts = /*#__PURE__*/function () {
@@ -38,15 +39,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) switch (_context.prev = _context.next) {
             case 0:
-              if (!(nextUrl == '')) {
-                _context.next = 2;
-                break;
-              }
-              return _context.abrupt("return");
-            case 2:
-              _context.next = 4;
+              _context.next = 2;
               return $.get(nextUrl);
-            case 4:
+            case 2:
               __html = _context.sent;
               $nextItem = $(__html).find('.pagination--container .pagination--next .pagination--item');
               $products = $($(__html).find('ul.productgrid--items').html());
@@ -57,7 +52,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 nextUrl = '';
               }
               return _context.abrupt("return", $products.addClass('__product-load-by-ajax-item'));
-            case 9:
+            case 7:
             case "end":
               return _context.stop();
           }
@@ -97,7 +92,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         return _regeneratorRuntime().wrap(function _callee2$(_context2) {
           while (1) switch (_context2.prev = _context2.next) {
             case 0:
-              if (!(isLoadmore() && isLoading == false)) {
+              if (!(isLoadmore() && isLoading == false && nextUrl)) {
                 _context2.next = 10;
                 break;
               }
