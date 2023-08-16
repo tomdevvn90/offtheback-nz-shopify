@@ -1,3 +1,10 @@
+/**
+ * Products Grid
+ * 
+ * @since 1.0.0
+ * @author Mike
+ */
+
 ((w, $) => {
   'use strict';
   

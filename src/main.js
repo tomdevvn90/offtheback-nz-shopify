@@ -6,3 +6,4 @@
  */
 
 import './features/products-grid';
+import './features/collection-product-loadmore-ajax';
